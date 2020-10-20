@@ -40,7 +40,7 @@ console.log(isArrayLengthEven([1, 2, 3]))
  */
 function addLailaToArray(a) {
   // Your code here
-  newArray = a
+  let newArray = a
   newArray.push('Laila')
   return newArray
 }
