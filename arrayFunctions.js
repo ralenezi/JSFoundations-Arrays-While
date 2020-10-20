@@ -26,7 +26,7 @@ console.log(isArrayLengthOdd([1, 2, 3]))
  */
 function isArrayLengthEven(a) {
   // Your code here
-  return true ? a.length % 2 === 0 : false
+  return a.length % 2 === 0
 }
 console.log(isArrayLengthEven([1, 2, 3]))
 
@@ -71,9 +71,8 @@ console.log(eliminateTeam(['Brazil', 'Germany', 'Italy']))
  */
 function secondHalfOfArrayIfItIsEven(a) {
   // Your code here
-  if (a.length % 2 === 0) {
-    return a.slice(a.length / 2, a.length)
-  } else return []
+  if (a.length % 2 === 0) return a.slice(a.length / 2)
+  else return []
 }
 console.log(
   secondHalfOfArrayIfItIsEven([
@@ -102,7 +101,7 @@ console.log(
 function youGottaCalmDown(s) {
   // Your code here
   while (s.endsWith('!!')) {
-    s = s.slice(0, s.length - 1)
+    s = s.slice(0, -1)
   }
   return s
 }
